@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Nitflex</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">Nitflex</h2>
+            <nav>
+                <a href="#" class="activo">Inicio</a>
+                <a href="#items">Películas</a>
+                <a href="#form">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="pelicula-principal">
+            <div class="contenedor">
+                <h3>Érase una vez en…</h3>
+                    <h3 class="titulo">Hollywood</h3>
+                <p class="descripcion">
+                    Los Angeles, 1969. La estrella de televisión Rick Dalton, un actor en horas bajas especializado en
+                    westerns, y el doble de acción Cliff Booth, su mejor amigo, tratan de sobrevivir a una industria
+                    cinematográfica en constante cambio. Dalton es vecino de la joven y prometedora actriz y modelo
+                    Sharon Tate, que acaba de casarse con el prestigioso director polaco Roman Polanski…
+                </p>
+                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+        </div>
+
+        
+
+
+
+<div class="peliculas-recomendadas contenedor">
+    <div class="contenedor-titulo-controles">
+        <h3>Películas Recomendadas</h3>
+        <div class="indicadores"></div>
+    </div>
+
+    <div class="contenedor-principal">
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+        <div class="contenedor-carousel">
+            <div class="carousel">
+                <div class="pelicula">
+                    <a href="#"><img src="images/1.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/2.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/3.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/4.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/5.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/6.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/7.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/8.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/9.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/10.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/11.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/12.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/13.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/14.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/15.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/16.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/17.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/18.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/19.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/20.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"><img src="images/21.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+    </div>
+</div>
+
+
+
+        <div class="row" id="items"></div>
+
+        <template id="templateCard">
+            <div class="card">
+                
+                <img id="image" src="" alt="" class="img-thumbnail my-4">
+                <h5></h5>
+                
+            </div>
+        </template>
+
+
+        <div id="detail"></div>
+
+
+        <div class="formContainer" >
+            <div class="content">
+
+                <form action="" class="form" id="form" onsubmit="">
+                    <h2 class="formT">Regístrate</h2>
+                    <h3 class="formT">¡Únete a nuestra comunidad!</h3>
+                    <input id="inputName" type="text" placeholder="Nombre completo" required>
+                    <input id="email" type="Email" name="email" placeholder="Correo electrónico" required>
+                    <input id="phone" type="text" placeholder="teléfono" required>
+                    <input id="address" type="text" placeholder="Dirección" required>
+                    <select name="gender" id="gender" value="Gender">
+                        <option value="0">Género</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <label for="">Observaciones</label>
+                    <textarea id="msm" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footerContainer">
+            <p>
+                Privacy policy Legal notice Terms and conditions Follow us
+                on Facebook Instagram Pinterest Twitter Linkedin
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="script/script.js" type="module"></script>
+    <script src="data/data.js" type="module"></script>
+</body>
+
+</html>
